@@ -2,22 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Futura Md BT", sans-serif; /* Definindo uma fonte padrão para todo o documento */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     list-style: none;
 }
- 
-        /* Importing Google font - Inter */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
         body {
-            background: rgb(255, 255, 255); /* Cor de fundo do corpo do documento */
+            background: #fff; /* Cor de fundo do corpo do documento */
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #ffffff; /* Cor de fundo do cabeçalho */
+            background: #fff; /* Cor de fundo do cabeçalho */
             height: 70px; /* Altura do cabeçalho */
             display: flex;
             align-items: center;
@@ -28,7 +25,7 @@
         header .logo {
             font-size: 30px;
             text-transform: uppercase;
-            border-bottom: 1px solid #000; /* Cor e espessura da linha */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin-bottom: 20px; /* Espaço entre o texto e a linha */
         }
 
@@ -51,7 +48,7 @@
             border-bottom-color: dodgerblue; /* Cor da borda inferior ao passar o mouse ou quando ativos */
         }
 
-        .hamburger {
+        .hamburger { /*nav hamburguer*/
             cursor: pointer;
             display: none;
         }
@@ -73,7 +70,7 @@
             .hamburger {
                 display: block; /* Mostra o ícone do menu (hamburger) em telas menores */
             }
-
+        
             header nav {
                 position: absolute;
                 left: -100%; /* Esconde a navegação no início */
@@ -98,7 +95,7 @@
         }
 
         .conteudo {
-            overflow: hidden; /* Limpa o float e evita colisão com outros elementos */
+            overflow: hidden;
         }
 
         h1 {
@@ -108,48 +105,52 @@
             font-size: 50px;
             padding-left: 40px;
         }
-
-        .digitado-p {
-            margin-top: 170px;
-        }
-
-        h1 span {
-            color: #0026ff;
-            position: relative;
-        }
-
-        h1 span::before {
-            content: "";
-            height: 40px;
-            width: 2px;
-            position: absolute;
-            top: 50%;
-            right: -8px;
-            background: #000000;
-            transform: translateY(-45%);
-            animation: blink 0.7s infinite;
-        }
-
-        img {
+        .conteudo>img {
             float: right;
-            margin-right: 5px;
+            padding-left: 5px;
         }
 
         h1 span.stop-blinking::before {
             animation: none;
         }
-
-        @keyframes blink {
-            50% {
-                opacity: 0
+            .h1-t {
+                font: 600 1.5em/1 'Raleway', sans-serif;
+                color: rgba(0,0,0,.5);
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .5em;
+                margin-top: 100px;
+                top: 25%;
+                width: 100%;
             }
-           
             
-        }
-        html{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-        }
+            .span-t, .span-t:after {
+                font-weight: 900;
+                color: #efedce;
+                white-space: nowrap;
+                display: inline-block;
+                position: relative;
+                letter-spacing: .1em;
+                padding: .2em 0 .25em 0;
+            }
+            
+            .span-t {
+                font-size: 4em;
+                z-index: 100;
+                text-shadow: .04em .04em 0 #9cb8b3;
+            }
+            
+            .span:after {
+                content: attr(data-shadow-text);
+                color: rgba(0,0,0,.35);
+                text-shadow: none;
+                position: absolute;
+                left: .0875em;
+                top: .0875em;
+                z-index: -1;
+              
+            }
+            
         
 
         .card-grid {
@@ -166,14 +167,16 @@
             box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.25);
             border-radius: 1.10rem;
             margin: 10px; /* Adiciona espaçamento ao redor dos cards */
+            padding-bottom: 10px;
         }
         
         .card-img{
+            width: 100%;
             border-radius: 1.1rem 1.1rem 0 0;
         }
         
         .card-content{
-            padding: 1rem 2rem;
+            padding: 1px 10px;
         }
         
         .card-title{
@@ -203,41 +206,4 @@
         
         .card-button:hover{
             border-bottom: 1px solid #3191fd;
-        }
-        .h1-t {
-            font: 600 1.5em/1 'Raleway', sans-serif;
-            color: rgba(0,0,0,.5);
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: .5em;
-            margin-top: 100px;
-            top: 25%;
-            width: 100%;
-        }
-        
-        .span-t, .span-t:after {
-            font-weight: 900;
-            color: #efedce;
-            white-space: nowrap;
-            display: inline-block;
-            position: relative;
-            letter-spacing: .1em;
-            padding: .2em 0 .25em 0;
-        }
-        
-        .span-t {
-            font-size: 4em;
-            z-index: 100;
-            text-shadow: .04em .04em 0 #9cb8b3;
-        }
-        
-        .span:after {
-            content: attr(data-shadow-text);
-            color: rgba(0,0,0,.35);
-            text-shadow: none;
-            position: absolute;
-            left: .0875em;
-            top: .0875em;
-            z-index: -1;
-          
         }
