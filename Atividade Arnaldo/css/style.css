@@ -94,24 +94,12 @@
             }
         }
 
-        .conteudo {
-            overflow: hidden;
-        }
-
         h1 {
             color: #000000;
             font-size: 2rem;
             font-weight: 700;
             font-size: 50px;
             padding-left: 40px;
-        }
-        .conteudo>img {
-            float: right;
-            padding-left: 5px;
-        }
-
-        h1 span.stop-blinking::before {
-            animation: none;
         }
             .h1-t {
                 font: 600 1.5em/1 'Raleway', sans-serif;
@@ -151,22 +139,30 @@
               
             }
             
-        
+.texto{
+    font-size: 30px
+}
+.direita{
+    float: right;
+}
+esquerda{
+    float: left
+}
 
         .card-grid {
             width: 100%;
-            padding: 0px 100px 0px 100px;
-            display: flex; /* Utilizando flex container */
+            padding: 0px 50px 0px 50px;
+            display: flex;
             justify-content: space-between;
             margin: 10px;
-            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+            flex-wrap: wrap;
         }
         
         .card-container {
-            width: 300px; /* ou o valor desejado para a largura dos cards */
+            width: 350px; 
             box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.25);
             border-radius: 1.10rem;
-            margin: 10px; /* Adiciona espaçamento ao redor dos cards */
+            margin: 5px; /* Adiciona espaçamento ao redor dos cards */
             padding-bottom: 10px;
         }
         
