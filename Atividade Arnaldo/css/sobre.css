@@ -15,7 +15,12 @@ main{
     float: left;
     padding-left: 50px;
 }
-
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+}
 .fachada{
     width: 500px;
     border-radius: 3px;
@@ -31,12 +36,22 @@ main{
     padding-bottom: 10px;
     font-size: 40px;
 }
-secao1{
-    margin-bottom: 40px;
+.secao1{
+    margin-bottom: 60px;
 }
 .texto{
     padding-top: 60px;
 }
 .local{
-    float: left;
+    text-align: center;
+    padding-bottom: 10px;
 }
+.secao2 iframe{
+    width: 100%;
+    display: flex;
+  justify-content: center;
+}
+mapa{
+    width: 90%;
+}
+
