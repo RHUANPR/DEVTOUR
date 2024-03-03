@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+        body {
+            background: #fff; /* Cor de fundo do corpo do documento */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #fff; /* Cor de fundo do cabeçalho */
+            height: 70px; /* Altura do cabeçalho */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px; /* Espaçamento interno do cabeçalho */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        header .logo {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: auto; /* Espaço entre o texto e a linha */
+            margin-top: auto;
+        }
+
+        header nav ul {
+            display: flex;
+        }
+
+        header nav ul li a {
+            display: inline-block;
+            color: #000; /* Cor do texto dos links */
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-bottom: 3px solid transparent; /* Adiciona uma borda inferior transparente inicialmente */
+            text-transform: uppercase;
+            transition: border-color 0.2s; /* Transição suave para a cor da borda ao passar o mouse */
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            border-bottom-color: dodgerblue; /* Cor da borda inferior ao passar o mouse ou quando ativos */
+        }
+
+        .hamburger { /*nav hamburguer*/
+            cursor: pointer;
+            display: none;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            margin: 5px 0;
+            background: #000; /* Cor das linhas do ícone do menu */
+        }
+
+        @media only screen and (max-width: 900px) {
+            header {
+                padding: 0 30px; /* Ajusta o espaçamento interno do cabeçalho em telas menores */
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .hamburger {
+                display: block; /* Mostra o ícone do menu (hamburger) em telas menores */
+            }
+        
+            header nav {
+                position: absolute;
+                left: -100%; /* Esconde a navegação no início */
+                top: 70px;
+                width: 100%;
+                background: #fff;
+                padding: 30px;
+                transition: left 0.3s; /* Adiciona uma transição suave para a exibição da navegação */
+            }
+
+            header #nav_check:checked~nav {
+                left: 0; 
+            }
+
+            header nav ul {
+                display: block; /* Ajusta a exibição dos itens de navegação em coluna */
+            }
+
+            header nav ul li a {
+                margin: 10px 0; /* Adiciona espaçamento entre os itens de navegação em telas menores */
+            }
+        }
+
+       .rodape{
+            border-top: 1px solid #636363;
+          bottom: 0;
+          left: 0;
+          height: 26px;
+          position: relative;
+          width: 100%;
+          background-color: #fff;
+        }
+        .rodape p{
+            text-align: center;
+            font-size: x-small;
+            color: #636363;
+        }

@@ -1,0 +1,111 @@
+
+
+        h1 {
+            color: #000000;
+            font-size: 2rem;
+            font-weight: 700;
+            font-size: 50px;
+            padding-left: 40px;
+        }
+            .h1-t {
+                font: 600 1.5em/1 'Raleway', sans-serif;
+                color: rgba(0,0,0,.5);
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .5em;
+                margin-top: 100px;
+                top: 25%;
+                width: 100%;
+            }
+            
+            .span-t, .span-t:after {
+                font-weight: 900;
+                color: #efedce;
+                white-space: nowrap;
+                display: inline-block;
+                position: relative;
+                letter-spacing: .1em;
+                padding: .2em 0 .25em 0;
+            }
+            
+            .span-t {
+                font-size: 4em;
+                z-index: 100;
+                text-shadow: .04em .04em 0 #9cb8b3;
+            }
+            
+            .span:after {
+                content: attr(data-shadow-text);
+                color: rgba(0,0,0,.35);
+                text-shadow: none;
+                position: absolute;
+                left: .0875em;
+                top: .0875em;
+                z-index: -1;
+              
+            }
+            
+.texto{
+    font-size: 30px
+}
+.direita{
+    float: right;
+}
+esquerda{
+    float: left
+}
+
+        .card-grid {
+            width: 100%;
+            padding: 0px 50px 0px 50px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .card-container {
+            width: 300px; 
+            box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.25);
+            border-radius: 1.10rem;
+            margin: 5px; /* Adiciona espaçamento ao redor dos cards */
+            padding-bottom: 10px;
+        }
+        
+        .card-img{
+            width: 100%;
+            border-radius: 1.1rem 1.1rem 0 0;
+        }
+        
+        .card-content{
+            padding: 1px 10px;
+        }
+        
+        .card-title{
+            font-size: 1.25rem;
+            margin-bottom: 0.2rem;
+            color: #3d3d3d;
+        }
+        
+        .card-subtitle{
+   
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            color: #3191fd;
+        }
+        
+        .card-desc{
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #3d3d3d;
+        }
+        
+        .card-button{
+            text-decoration: none;
+            color: #3191fd;
+            transition: border-bottom 0.3s;
+        }
+        
+        .card-button:hover{
+            border-bottom: 1px solid #3191fd;
+        }

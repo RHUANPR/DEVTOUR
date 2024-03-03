@@ -1,0 +1,42 @@
+ body{
+    margin-bottom: 40px;
+ }
+main{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.direita{
+    float: right;
+    padding-right: 60px;
+}
+.esquerda{
+    float: left;
+    padding-left: 50px;
+}
+
+.fachada{
+    width: 500px;
+    border-radius: 3px;
+}
+
+.esquerda h3{
+    font-weight: bolder;
+    font-size: small;
+    color: dodgerblue;
+}
+.esquerda h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+secao1{
+    margin-bottom: 40px;
+}
+.texto{
+    padding-top: 60px;
+}
+.local{
+    float: left;
+}
