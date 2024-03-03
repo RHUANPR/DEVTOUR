@@ -23,8 +23,8 @@
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
 
-        header .logo {
-            font-size: 30px;
+        .logo img{
+            width: 150px;
             text-transform: uppercase;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin-bottom: auto; /* Espaço entre o texto e a linha */
@@ -47,7 +47,7 @@
 
         header nav ul li a:hover,
         header nav ul li a.active {
-            border-bottom-color: dodgerblue; /* Cor da borda inferior ao passar o mouse ou quando ativos */
+            border-bottom-color: #1e90ff; /* Cor da borda inferior ao passar o mouse ou quando ativos */
         }
 
         .hamburger { /*nav hamburguer*/
@@ -100,13 +100,11 @@
             border-top: 1px solid #636363;
           bottom: 0;
           left: 0;
-          height: 26px;
           position: relative;
           width: 100%;
-          background-color: #fff;
         }
         .rodape p{
             text-align: center;
-            font-size: x-small;
+            font-size: small;
             color: #636363;
         }

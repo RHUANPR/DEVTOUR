@@ -29,7 +29,7 @@ main{
 .esquerda h3{
     font-weight: bolder;
     font-size: small;
-    color: dodgerblue;
+    color: #1e90ff;
 }
 .esquerda h2{
     padding-top: 5px;
@@ -46,12 +46,61 @@ main{
     text-align: center;
     padding-bottom: 10px;
 }
-.secao2 iframe{
+.secao3 iframe{
     width: 100%;
     display: flex;
   justify-content: center;
 }
-mapa{
-    width: 90%;
-}
 
+.secao2{
+    padding-bottom: 30px;
+}
+.textologo{
+    font-size: x-large;
+    text-align: end;
+    padding-top: 90px;
+}
+.logof img{
+    width: 400px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+}
+.palheta img{
+    width: 500px;
+}
+svg{
+    margin-bottom: -5px;
+}
+.secao4{
+    background-color: #1e90ff;
+    display: flex;
+  justify-content: center;
+    position: relative;
+
+}
+.contato{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+  top: 50%;
+  margin-top: -25px;
+  border-radius: 20px;
+    
+}
+.forms h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.forms form{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+#name, #email, #message{
+    width: 400px;
+}
+#submit{
+    width: 300px;
+}
