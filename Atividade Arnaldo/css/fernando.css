@@ -1,0 +1,40 @@
+.banneracima img{
+    width: 300px;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.texto{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+p{
+    padding-bottom: 20px;
+}
+
+.esquerda img{
+    width: 700px;
+    padding-top: 40px;
+    padding-right: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+}
+main{
+    padding-bottom: 30px;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 30px;
+}
